@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <!-- Hace que la web se adapte a móviles y tablets-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Enclaves Históricos Samurái</title>
+
+     <!-- Hoja de estilos externa -->
+      <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Enlace de accesibilidad -->
+     <a href="#contenido-principal" class="skip-link">
+        Saltar al contenido principal
+     </a>
+    <!-- ==========================================================
+                ENCABEZADO
+    ==============================================================-->
+    <header>
+
+        <div class="controles-accesibilidad">
+
+            <button onclick="aumentarTexto()">
+                A+
+            </button>
+
+            <button onclick="reducirTexto()">
+                A-
+            </button>
+            
+            <button onclick="modoContraste()">
+                Alto contraste
+            </button>
+
+            <script>
+                function modoContraste(){
+
+                    document.body.classList.toggle("alto-contraste");
+
+                }
+
+            </script>
+            
+            <script>
+
+                let tamano = 18;
+
+                function aumentarTexto(){
+                    tamano += 2;
+                    document.body.style.fontSize = tamano + "px";
+                }
+
+                function reducirTexto(){
+
+                    if(tamano > 14){
+                        tamano -= 2;
+                        document.body.style.fontSize = tamano + "px";
+                    }
+                }
+            </script>
+        </div>
+
+        <h1>Asociación de Samuráis Senior</h1>
+
+        <p>
+            Descubre unos de los enclaves históricos más importantes de Japón.
+        </p>
+    </header>
+
+    <!--==============================================================================
+            NAVEGACIÓN
+    ===================================================================================-->
+    <nav aria-label="Menú principal">
+        
+        <ul>
+            <li><a href="#tsuruga">Castillos de Tsuruga</a></li>
+            <li><a href="#higashiyama">Higashiyama</a></li>
+            <li><a href="#matsuyama">Matsuyama</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- ============================================================================
+                CONTENIDO PRINCIPAL
+    =================================================================================-->
+
+    <main id="contenido-principal">
+
+        <!-- ========================================================================
+                    SECCIÓN PRINCIPAL
+        =============================================================================-->
+        <section>
+
+            <!--======================================================================
+                    ARTÍCULO 1
+            ==========================================================================-->
+            <article id="tsuruga">
+
+                <h2>Castillos de Tsuruga</h2>
+
+                <!--<img src="img/tsuruga.jpg" 
+                    alt="Vista panorámica del Castillo de Tsuruga">-->
+                
+                <figure>
+                    <img src="img/tsuruga.jpg"
+                    alt="Vista panorámica del castillo de Tsuruga durante el día">
+
+                    <figcaption>
+                        Castillo de Tsuruga.
+                    </figcaption>
+                </figure>
+
+                <h3>Horario de apertura</h3>
+                <p>09:00 - 17:00 horas</p>
+
+                <h3>Contacto</h3>
+                <p>
+                    Teléfono: 
+                    <a href="tel:+81123456789">
+                        +81 123 456 789
+                    </a>
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:info@samuraisenior.jp">
+                        info@samuraisenior.jp
+                    </a>
+                </p>
+
+                <h3>Cómo llegar</h3>
+                <p>
+                    Acceso mediante tren local y autobús urbano.
+                </p>
+
+                <h3>Reseña histórica</h3>
+                <p>
+                    El Castillo de Tsuruga fue uno de los principales bastiones defensivos del norte de Japón.
+                    Su importancia aumentó durante los periodos feudales al convertirse en un centro estratégico
+                    y administrativo.
+                </p>
+
+            </article>
+
+            <!-- ====================================================================
+                            ARTÍCULO 2
+            =========================================================================-->
+
+            <article id="higashiyama">
+
+                <h2>Higashiyama</h2>
+
+                <img src="img/higashiyama.jpg"
+                    alt="Calles tradicionales del distrito de Higashiyama">
+
+                <h3>Horario de apertura</h3>
+                <p>08:30 - 18:00 horas</p>
+
+                <h3>Contacto</h3>
+                <p>Teléfono: +81 234 567 890</p>
+
+                <h3>Cómo llegar</h3>
+                <p>
+                    Autobuses turísticos desde la estación central.
+                </p>
+
+                <h3>Reseña histórica</h3>
+                <p>
+                    Higashiyama conserva el aspecto tradicional del antiguo Kioto, ofreciendo una visión
+                    única de la arquitectura y costumbres japonesas durante siglos.
+                </p>
+
+            </article>
+
+            <!-- ====================================================================
+                        ARTÍCULO 3
+            =========================================================================-->
+
+            <article id="matsuyama">
+
+                <h2>Matsuyama</h2>
+
+                <img src="img/matsuyama.jpg"
+                    alt="Vista del Castillo de Matsuyama">
+                
+                <h3>Horario de apertura</h3>
+                <p>09:00 - 17:30 horas.</p>
+
+                <h3>Contacto</h3>
+                <p>Teléfono: +81 3245 678 901</p>
+
+                <h3>Cómo llegar</h3>
+                <p>
+                    Tranvía y teleférico desde el centro urbano.
+                </p>
+
+                <h3>Reseña histórica</h3>
+                <p>
+                    El Castillo de Matsuyama es uno de los castillos mejor conservados de Japón,
+                    siendo un importante testimonio de la época feudal japonesa.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- ==================================================================================
+                        BARRA LATERAL
+        =======================================================================================-->
+
+        <aside aria-label="Información complementaria">
+
+            <h2>Información adicional</h2>
+
+            <p>
+                Los samuráis desempeñaron un papel fundamental
+                en la historia japonesa durante más de siete siglos.
+            </p>
+
+            <p>
+                Estos enclaves conservan parte importante del patrimonio 
+                histórico y cultural del país.
+            </p>
+        </aside>
+
+        <!-- ===========================================================================
+                    PIE DE PÁGINA
+        =================================================================================-->
+
+        <footer aria-label="Pie de página">
+            <p>
+                © 2026 Asociación de Samuráis Senior.
+                Todos los derechos reservados.
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
